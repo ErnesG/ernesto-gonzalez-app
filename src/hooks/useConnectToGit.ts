@@ -13,7 +13,7 @@ export function useConnectToGit() {
         const fetchPullRequest = async (owner: string, repository: string) => {
             try {
                 setLoading(true);
-                const {data} = await axios.get(`${API_BASE}/${owner}/${repository}/${PULLS}`,{
+                const {data} = await axios.get(`${API_BASE}${owner}/${repository}/${PULLS}`,{
                     headers: {
                         Accept: "application/vnd.github.v3+json"
                     }

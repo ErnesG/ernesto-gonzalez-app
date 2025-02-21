@@ -20,12 +20,12 @@ export function useConnectToGit() {
                 });
                 setPullRequest(data)
 
-            } catch(err: unknown) {
-                if (axios.isAxiosError(err)) {
-                    setError(err.response?.data?.message || "Failed to fetch PRs.");
-                  } else {
+            } catch(err: any) {
+                if (err.isAxiosError && err.response?.data?.message) {
+                    setError(err.response.data.message);
+                } else {
                     setError("An unexpected error occurred.");
-                  }
+                }
             } finally {
                 setLoading(false);
             }

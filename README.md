@@ -67,3 +67,16 @@ The project follows Atomic Design methodology:
 - Atomic Design pattern
 - Reusable components
 - Props interface definitions
+
+Run tests in watch mode
+```
+npm test
+```
+Run tests with coverage report
+```
+npm run test:coverage
+```
+Run tests with UI
+```
+npm run test:ui
+```

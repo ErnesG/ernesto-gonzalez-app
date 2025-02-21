@@ -22,7 +22,7 @@ function Content() {
   return (
     <div className="max-w-4xl mx-auto mt-8">
       <Text variant="title" className="text-2xl font-bold mb-4 text-center">
-        Pull request Bar
+        Pull request Bar by Ernesto Gonzalez Lopez
       </Text>
       <FilterBar labels={labels} onFilterChange={setFilter} />
       <PullRequestList

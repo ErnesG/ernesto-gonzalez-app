@@ -1,4 +1,4 @@
-interface PullRequest {
+export interface PullRequest {
     id: number;
     number: number;
     title: string;
